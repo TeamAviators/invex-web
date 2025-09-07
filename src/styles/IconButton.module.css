@@ -1,0 +1,19 @@
+.iconButton {
+  transition: all 200ms ease-in-out;
+}
+
+.iconButton:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.github:hover {
+  filter: drop-shadow(0 0 4px #E6EDF333) drop-shadow(0 0 4px #E6EDF333);
+}
+
+.insta:hover {
+  filter: drop-shadow(0 0 4px #E1306C55) drop-shadow(0 0 4px #E1306C55);
+}
+
+.linkedin:hover {
+  filter: drop-shadow(0 0 4px #0A66C255) drop-shadow(0 0 4px #0A66C255);
+}

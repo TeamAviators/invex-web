@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
 import News from "./pages/News";
-import Navbar from './components/Navbar'
-import './App.css'
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   useEffect(() => {
@@ -15,13 +16,16 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/analytics" element={<Analytics />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
