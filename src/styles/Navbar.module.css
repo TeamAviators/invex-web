@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #00000044;
+  padding: 2vh 5vw 2vh 2.5vw;
+}
+
+.imageContainer {
+  display: flex;
+  cursor: default;
+  transition: transform 200ms ease-in-out
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
+}
+
+.title, .discription {
+  margin: 0;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.discription {
+  font-size: small;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #cfcdcf;
+  text-decoration: underline;
+}
+
+.link.active {
+  color: #ffffff;
+}
+
+.image {
+  height: 60px;
+  width: 60px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
